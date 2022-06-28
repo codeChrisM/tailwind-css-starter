@@ -1,17 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tailwind CSS Starter</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <h1
-            class="font-bold text-3xl text-center max-w-2xl mx-auto mt-12 bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeChris</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      header {
+        background-color: #0b0d12;
+      }
+
+      .promo {
+        background-image: url("/public/images/1600x720--CodeChrisShow.webp");
+        background-size: cover;
+      }
+
+      .card {
+      }
+
+      .ProuductTile-overlay {
+        /* height: 300px;     */
+        background-position: center center;
+        background-size: contain;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .ProuductTile-overlay--1 {
+        background-image: url("/public/images/website_animator_portfolio/ProductTile--Principles.webp");
+      }
+      .ProuductTile-overlay--2 {
+        background-image: url("/public/images/website_animator_portfolio/ProductTile--PureJS.webp");
+      }
+      .ProuductTile-overlay--3 {
+        background-image: url("/public/images/website_animator_portfolio/ProductTile--SubtleBackground.webp");
+      }
+      .ProuductTile-overlay--4 {
+        background-image: url("/public/images/website_animator_portfolio/ProductTile--Armify.webp");
+      }
+      .ProuductTile-overlay--5 {
+        background-image: url("/public/images/website_animator_portfolio/ProductTile--textVideo.webp");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="lg:py-0 shadow-xl text-white" data-aos="fade-down">
+      <!-- SVG Images -->
+      <div style="display: none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 512 512"
+          style="enable-background: new 0 0 512 512"
+          xml:space=""
+          class=""
         >
-            If you see a beautiful gradient on this text, Tailwind CSS is
-            successfully installed and setup
-        </h1>
-    </body>
+          <g id="BowTie--SVG">
+            <path
+              style="fill: #e6e600"
+              d="M491.442 275.461a80.338 80.338 0 0 1 0-39.587l9.94-39.052c12.877-50.643-40.931-92.2-86.667-66.947l-108.197 59.751-.239.125c-4.395-8.209-13.059-13.788-23.022-13.788h-54.821c-9.962 0-18.615 5.579-23.022 13.776l-.228-.114-108.207-59.751c-45.736-25.253-99.544 16.304-86.655 66.947l9.928 39.052a80.08 80.08 0 0 1 0 39.587l-9.928 39.052c-12.888 50.631 40.92 92.2 86.655 66.935l108.208-59.751.228-.114c4.406 8.198 13.059 13.776 23.022 13.776h54.821c9.962 0 18.627-5.579 23.022-13.788l.239.125 108.197 59.751c45.736 25.264 99.544-16.304 86.667-66.935l-9.941-39.05z"
+            />
+            <path
+              style="fill: #b3b300"
+              d="m191.878 255.923-.011-.125c.011-.046.011-.091.011-.137 0 .159.011.262.011.33l-.011-.068zM191.889 256.026l.011.011v.068a.232.232 0 0 0-.011-.079zM319.828 255.661c0 .046 0 .091.011.137l-.011.125-.011.08c0-.068.011-.182.011-.342z"
+            />
+            <path
+              style="fill: #b3b300"
+              d="M461.908 293.917c10.293 32.916-32.642 59.933-69.121 43.515l-86.325-38.847-.182-.068c1.56-2.38 2.448-5.112 2.448-8.004v-7.423c3.45 2.277 3.438-57.155 0-54.89v-7.378c0-2.903-.888-5.624-2.448-8.015l.182-.068 86.325-38.847c36.479-16.418 79.414 10.6 69.121 43.527l-7.913 25.378c-2.641 8.437-2.641 17.295 0 25.743l7.913 25.377z"
+            />
+            <path
+              style="fill: #04233d"
+              d="m319.84 255.798-.011.125-.011.08c0-.068.011-.182.011-.342a.485.485 0 0 0 .011.137zM191.878 255.661c0 .159.011.262.011.33l-.011-.068-.011-.125c.011-.045.011-.091.011-.137z"
+            />
+            <path
+              style="fill: #b3b300"
+              d="M49.775 217.406c-10.293-32.916 32.642-59.933 69.121-43.515l86.325 38.847.182.068c-1.56 2.38-2.448 5.112-2.448 8.004v7.423c-3.45-2.277-3.438 57.155 0 54.89v7.378c0 2.903.888 5.624 2.448 8.015l-.182.068-86.325 38.847c-36.479 16.418-79.414-10.6-69.121-43.527l7.913-25.378c2.641-8.437 2.641-17.295 0-25.743l-7.913-25.377z"
+            />
+            <path
+              d="M511.911 326.534c-.246-4.711-4.289-8.333-8.972-8.084a8.541 8.541 0 0 0-8.085 8.971c.947 18.193-8.323 35.661-24.192 45.589-15.867 9.928-35.184 10.413-51.677 1.304l-101.974-56.315a34.696 34.696 0 0 0 1.035-8.393V292.11c8.08 6.654 18.422 10.655 29.681 10.655 4.717 0 8.539-3.823 8.539-8.539s-3.822-8.539-8.539-8.539c-16.323 0-29.61-13.246-29.681-29.553v-.263c.072-16.307 13.357-29.553 29.681-29.553 4.717 0 8.539-3.823 8.539-8.539s-3.822-8.539-8.539-8.539c-11.259 0-21.602 4.001-29.681 10.655v-17.496c0-2.835-.352-5.657-1.035-8.395l101.973-56.315c18.131-10.01 39.575-8.365 55.963 4.293 16.392 12.661 23.405 32.996 18.3 53.071l-9.94 39.053a89.13 89.13 0 0 0 0 43.799l4.876 19.16a8.543 8.543 0 0 0 8.269 6.435c.697 0 1.406-.087 2.112-.266 4.571-1.162 7.332-5.811 6.17-10.381l-4.876-19.157a71.98 71.98 0 0 1 0-35.377l9.94-39.055c6.809-26.781-2.545-53.909-24.412-70.799-21.864-16.887-50.472-19.082-74.658-5.728L308.902 178.97a34.578 34.578 0 0 0-25.502-11.208h-54.821a34.598 34.598 0 0 0-25.496 11.207l-101.834-56.232c-24.189-13.355-52.797-11.159-74.659 5.73-21.865 16.889-31.214 44.016-24.4 70.794l9.932 39.06a71.743 71.743 0 0 1-.002 35.371l-9.929 39.05c-6.815 26.778 2.536 53.905 24.403 70.795 12.36 9.547 26.874 14.398 41.529 14.398 11.267 0 22.616-2.869 33.128-8.676l82.573-45.597a8.537 8.537 0 0 0 3.347-11.603c-2.278-4.128-7.475-5.629-11.602-3.347l-82.576 45.6c-18.127 10.014-39.572 8.371-55.96-4.289-16.391-12.661-23.4-32.994-18.29-53.068l9.928-39.046a88.847 88.847 0 0 0 .001-43.802l-9.929-39.055c-5.109-20.074 1.899-40.41 18.289-53.07 16.387-12.661 37.832-14.307 55.964-4.296l101.981 56.313a34.817 34.817 0 0 0-1.032 8.396v17.501c-8.08-6.657-18.425-10.66-29.688-10.66-4.717 0-8.539 3.823-8.539 8.539s3.822 8.539 8.539 8.539c16.368 0 29.684 13.316 29.684 29.684s-13.316 29.684-29.684 29.684c-4.717 0-8.539 3.823-8.539 8.539s3.822 8.539 8.539 8.539c11.263 0 21.607-4.003 29.688-10.66v17.5a34.821 34.821 0 0 0 4.092 16.362 34.637 34.637 0 0 0 30.543 18.273h54.821a34.585 34.585 0 0 0 25.504-11.208l101.824 56.232c10.474 5.786 21.803 8.665 33.091 8.665 12.423 0 24.793-3.491 35.901-10.439 21.126-13.213 33.46-36.569 32.19-60.951zm-228.51.626H228.58a17.571 17.571 0 0 1-15.489-9.261 17.655 17.655 0 0 1-2.066-8.296V202.398c0-2.895.715-5.764 2.057-8.276a17.577 17.577 0 0 1 15.499-9.28h54.821a17.545 17.545 0 0 1 15.492 9.279l.006.01a17.285 17.285 0 0 1 2.069 8.267v107.206c0 2.93-.696 5.711-2.074 8.277a17.547 17.547 0 0 1-15.494 9.279z"
+            />
+          </g>
+        </svg>
+      </div>
+      <!-- SVG Images --END -->
+
+      <!-- Navbar -->
+      <div class="max-w-6xl mx-auto px-8 flex flex-wrap justify-between">
+        <div class="items-center">
+          <a
+            href="index.html"
+            class="flex items-center text-xl w-sidebar mr-4 hover:no-underline"
+          >
+            <span class="mr-1 -mt-1 text-primary">
+              <svg
+                class="w-8 h-8"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                focusable="false"
+                aria-hidden="true"
+              >
+                <use xlink:href="#BowTie--SVG"></use>
+              </svg>
+            </span>
+            <span class="m-3"
+              ><strong
+                >CodeChris <span class="text-xs">Art & Code </span></strong
+              ></span
+            >
+          </a>
+        </div>
+        <div>
+          <label
+            data-toggle="sidebar"
+            class="pointer-cursor lg:hidden block m-3"
+          >
+            <svg
+              class="fill-current text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </label>
+
+          <input class="hidden" type="checkbox" id="menu-toggle" />
+
+          <div
+            class="hidden lg:flex lg:items-center lg:w-auto w-full"
+            id="menu"
+          >
+            <ul
+              class="lg:flex items-center justify-between text-md font-semibold pt-4 lg:pt-0"
+            >
+              <li class="relative inline-block text-left">
+                <button
+                  class="flex items-center lg:p-4 py-3 px-0 block hover:text-yellow-400 font-semibold"
+                  id="options-menue1"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                >
+                  LinkedIn
+                </button>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center lg:p-4 py-3 px-0 block hover:text-yellow-400 font-semibold"
+                  id="options-menue"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                >
+                  Email
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center lg:p-4 py-3 px-0 block hover:text-yellow-400 font-semibold"
+                  id="options-menue"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                >
+                  Form
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center lg:p-4 py-3 px-0 block hover:text-yellow-400 font-semibold"
+                  id="options-menue2"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                >
+                  Youtube
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar --END-->
+    </header>
+    <!-- // END HEADER ------------------------------------------------------------------------------------------------------------------------------>
+
+    <!-- PAGE CONTENT -->
+
+    <!-- Part 1. Slideshow -->
+    <section>
+      <div class="flex md:overflow-scroll w-full overflow-y-auto">
+        <div class="promo flex flex-col m-4 p-8 rounded-xl w-full">
+          <div
+            class="font-bold text-3xl flex-grow m-12 text-white flex rounded mb-4"
+          >
+            The Code Chris Show
+          </div>
+          <button
+            class="border m-4 bg-blue-400 hover:bg-yellow-400 hover:text-black max-w-sm p-5 text-white rounded-full"
+          >
+            Watch
+          </button>
+        </div>
+
+        <!-- <div class="bg-gray-800 flex flex-col m-4 p-4 pb-6 rounded-xl w-full">
+          <div
+            class="font-bold text-3xl flex-grow min-w-maxt mt-12 text-white bg-gray-800 flex rounded mb-4"
+          >
+            Am I a good hire? AMA
+          </div>
+          <button
+            class="border m-4 bg-blue-400 hover:bg-yellow-400 max-w-sm p-5 text-white rounded-full"
+          >
+            Text for tHe Button
+          </button>
+        </div>
+
+        <div class="bg-gray-800 flex flex-col m-4 p-4 pb-6 rounded-xl w-full">
+          <div
+            class="font-bold text-3xl flex-grow min-w-max mt-12 text-white bg-gray-800 flex rounded mb-4"
+          >
+            Si, Se Habla Español
+          </div>
+          <button
+            class="border m-4 bg-blue-400 hover:bg-yellow-400 max-w-sm p-5 text-white rounded-full"
+          >
+            Text for tHe Button
+          </button>
+        </div>
+
+        <div class="bg-gray-800 flex flex-col m-4 p-4 pb-6 rounded-xl w-full">
+          <div
+            class="font-bold text-3xl flex-grow min-w-maxt mt-12 text-white bg-gray-800 flex rounded mb-4"
+          >
+            Why a Bow Tie?
+          </div>
+          <button
+            class="border m-4 bg-blue-400 hover:bg-yellow-400 max-w-sm p-5 text-white rounded-full"
+          >
+            Text for tHe Button
+          </button>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Part 2. Title  -->
+    <section>
+      <div class="p-4 bg-gray-200">
+        <h2
+          class="font-bold text-3xl text-center md:text-left mx-auto bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent"
+        >
+          Website Animator Portfolio
+        </h2>
+      </div>
+    </section>
+
+    <!-- Part 3. Cards--Animation Portfolio -->
+    <section class="bg-gray-300">
+      <div class="text-black flex flex-col md:flex-row border-2 border-red-600">
+        <div
+          class="h-52 md:h-80 border-red-700 mx-6 text-center bg-cover md:bg-contain mx-auto rounded drop-shadow-lg border-2 w-full"
+        >
+          <a href="www.google.com">
+            <div
+              href="www.Google.com"
+              class="ProuductTile-overlay ProuductTile-overlay--1 flex max-w-sm scale-75 hover:scale-150 bg-no-repeat"
+            >
+              &nbsp;
+            </div>
+          </a>
+        </div>
+        <div
+          class="h-52 md:h-80 border-red-700 mx-6 text-center bg-cover md:bg-contain mx-auto rounded drop-shadow-lg border-2 w-full"
+        >
+          <a href="www.google.com">
+            <div
+              href="www.Google.com"
+              class="ProuductTile-overlay ProuductTile-overlay--2 flex max-w-sm scale-75 hover:scale-150 bg-no-repeat"
+            >
+              &nbsp;
+            </div>
+          </a>
+        </div>
+        <div
+          class="h-52 md:h-80 border-red-700 mx-6 text-center bg-cover md:bg-contain mx-auto rounded drop-shadow-lg border-2 w-full"
+        >
+          <a href="www.google.com">
+            <div
+              href="www.Google.com"
+              class="ProuductTile-overlay ProuductTile-overlay--3 flex max-w-sm scale-75 hover:scale-150 bg-no-repeat"
+            >
+              &nbsp;
+            </div>
+          </a>
+        </div>
+        <div
+          class="h-52 md:h-80 border-red-700 mx-6 text-center bg-cover md:bg-contain mx-auto rounded drop-shadow-lg border-2 w-full"
+        >
+          <a href="www.google.com">
+            <div
+              href="www.Google.com"
+              class="ProuductTile-overlay ProuductTile-overlay--4 flex max-w-sm scale-75 hover:scale-150 bg-no-repeat"
+            >
+              &nbsp;
+            </div>
+          </a>
+        </div>
+        <div
+          class="h-52 md:h-80 border-red-700 mx-6 text-center bg-cover md:bg-contain mx-auto rounded drop-shadow-lg border-2 w-full"
+        >
+          <a href="www.google.com">
+            <div
+              href="www.Google.com"
+              class="ProuductTile-overlay ProuductTile-overlay--5 flex max-w-sm scale-75 hover:scale-150 bg-no-repeat"
+            >
+              &nbsp;
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 4. Title -->
+    <section>
+      <div class="p-4 bg-gray-200">
+        <h2
+          class="font-bold text-3xl text-center md:text-left mx-auto bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent"
+        >
+          Traditional Website Developer
+        </h2>
+      </div>
+    </section>
+
+    <!-- Part 5. Cards--Traditional Website -->
+    <section>
+      <div class="text-black flex flex-col md:flex-row md:justify-around">
+        <div class="card flex-grow m-2 text-center bg-red-700 rounded">
+          <div class="ProuductTile-overlay ProuductTile-overlay--1">&nbsp;</div>
+          <div class="background">&nbsp;</div>
+        </div>
+        <div class="card flex-grow m-2 text-center bg-red-700 rounded">
+          <div class="ProuductTile-overlay ProuductTile-overlay--2">&nbsp;</div>
+          <div class="background">&nbsp;</div>
+        </div>
+        <div class="card flex-grow m-2 text-center bg-red-700 rounded">
+          <div class="ProuductTile-overlay ProuductTile-overlay--3">&nbsp;</div>
+          <div class="background">&nbsp;</div>
+        </div>
+        <div class="card flex-grow m-2 text-center bg-red-700 rounded">
+          <div class="ProuductTile-overlay ProuductTile-overlay--4">&nbsp;</div>
+          <div class="background">&nbsp;</div>
+        </div>
+        <div class="card flex-grow m-2 text-center bg-red-700 rounded">
+          <div class="ProuductTile-overlay ProuductTile-overlay--5">&nbsp;</div>
+          <div class="background">&nbsp;</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- // END PAGE CONTENT -->
+  </body>
 </html>
