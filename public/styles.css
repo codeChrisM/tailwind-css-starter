@@ -31278,48 +31278,6 @@ video {
   content: none;
 }
 
-header{
-  background-color: #0b0D12;
-}
-
-.promo{
-  background-image: url("/public/images/1600x720--CodeChrisShow.webp");
-  background-size: cover;
-}
-
-.card{
-}
-
-.ProuductTile-overlay{
-  /* height: 300px;     */
-  background-position: center center;
-  background-size: contain;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.ProuductTile-overlay--1{
-  background-image: url("/public/images/website_animator_portfolio/ProductTile--Principles.webp");
-}
-
-.ProuductTile-overlay--2{
-  background-image: url("/public/images/website_animator_portfolio/ProductTile--PureJS.webp");
-}
-
-.ProuductTile-overlay--3{
-  background-image: url("/public/images/website_animator_portfolio/ProductTile--SubtleBackground.webp");
-}
-
-.ProuductTile-overlay--4{
-  background-image: url("/public/images/website_animator_portfolio/ProductTile--Armify.webp");
-}
-
-.ProuductTile-overlay--5{
-  background-image: url("/public/images/website_animator_portfolio/ProductTile--textVideo.webp");
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -182649,3 +182607,4 @@ header{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+

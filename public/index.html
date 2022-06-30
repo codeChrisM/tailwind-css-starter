@@ -10,9 +10,15 @@
         background-color: #0b0d12;
       }
 
+      body {
+        background-color: #171717;
+      }
+
       .promo {
         background-image: url("/public/images/1600x720--CodeChrisShow.webp");
-        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-color: #000;
       }
 
       .card {
@@ -195,13 +201,16 @@
     <!-- Part 1. Slideshow -->
     <section>
       <div class="flex md:overflow-scroll w-full overflow-y-auto">
-        <div class="promo flex flex-col m-4 p-8 rounded-xl w-full">
+        <div
+          class="promo flex flex-col m-4 p-8 rounded-xl w-full bg-cover md:bg-contain"
+        >
           <div
             class="font-bold text-3xl flex-grow m-12 text-white flex rounded mb-4"
           >
             The Code Chris Show
           </div>
           <button
+            href="https://youtu.be/Aaj8xDb_dtY"
             class="border m-4 bg-blue-400 hover:bg-yellow-400 hover:text-black max-w-sm p-5 text-white rounded-full"
           >
             Watch
